@@ -12,7 +12,7 @@ var object = function object(obj){
 	return obj;
 };
 
-var computedGet = function(propertyName) {
+var computedGet = function computedGet(propertyName) {
 	return get(this.object, propertyName, this);
 };
 
