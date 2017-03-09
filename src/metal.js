@@ -72,7 +72,6 @@ var setComputedDependency = function setComputedDependency(computed, dependency)
 
 var get = function get(object, propertyName, dependentComputed){
 	if (propertyName.indexOf('.') !== -1){
-		var baseDependentProperty = dependentComputed;
 		var parts = propertyName.split('.');
 		while (parts.length) {
 			var part = parts.shift();
